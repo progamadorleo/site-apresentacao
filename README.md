@@ -24,11 +24,7 @@ O objetivo principal é servir como um cartão de visitas digital, reunindo info
 ## 🛠️ Tecnologias Utilizadas
 
 - **React**  
-- **JavaScript (ES6+)**  
-- **HTML5**  
-- **CSS3**  
-
----
-
-## 📂 Estrutura do Projeto
-
+- **Next JS**  
+- **TypeScript**  
+- **Tailwind CSS**
+- **shadcn/ui**  
