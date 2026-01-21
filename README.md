@@ -23,8 +23,9 @@ O objetivo principal é servir como um cartão de visitas digital, reunindo info
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **React**  
-- **Next JS**  
-- **TypeScript**  
-- **Tailwind CSS**
-- **shadcn/ui**  
+- [Next.js](https://nextjs.org/) - Framework React
+- [React](https://react.dev/) - Biblioteca de UI
+- [TypeScript](https://www.typescriptlang.org/) - Tipagem estática
+- [Tailwind CSS](https://tailwindcss.com/) - Estilização
+- [shadcn/ui](https://ui.shadcn.com/) - Componentes
+- [Lucide React](https://lucide.dev/) - Ícones
