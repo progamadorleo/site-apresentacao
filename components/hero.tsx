@@ -25,7 +25,7 @@ export function Hero() {
             <Github className="w-6 h-6" />
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/progamadorleo/"
             target="_blank"
             className="text-muted-foreground hover:text-primary transition-colors duration-300"
             aria-label="LinkedIn"
@@ -33,7 +33,7 @@ export function Hero() {
             <Linkedin className="w-6 h-6" />
           </Link>
           <Link
-            href="mailto:leosnts17@email.com"
+            href="mailto:leosnts20@email.com"
             className="text-muted-foreground hover:text-primary transition-colors duration-300"
             aria-label="Email"
           >

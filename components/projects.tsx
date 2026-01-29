@@ -4,27 +4,19 @@ import Link from "next/link"
 export function Projects() {
   const projects = [
     {
-      title: "E-commerce Dashboard",
+      title: "Aplicativo de Vendas",
       description:
-        "Dashboard completo para gerenciamento de loja virtual com gráficos interativos, controle de estoque e relatórios de vendas.",
-      tech: ["React", "TypeScript", "Tailwind CSS"],
-      github: "#",
+        "Aplicativo mobile para registro de vendas com suporte offline. Funciona tanto conectado quanto desconectado da internet, sincronizando os dados automaticamente quando a conexão é restabelecida.",
+      tech: ["Expo", "React", "API Rest", "TypeScript"],
+      github: "https://github.com/progamadorleo/Aplicativo-de-Vendas",
       demo: "#",
     },
     {
-      title: "Landing Page SaaS",
+      title: "Site de Apresentação",
       description:
-        "Landing page moderna e responsiva para produto SaaS, com animações suaves e otimização para conversão.",
-      tech: ["Next.js", "Framer Motion", "CSS"],
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "App de Tarefas",
-      description:
-        "Aplicação de gerenciamento de tarefas com drag and drop, categorização e persistência de dados local.",
-      tech: ["React", "JavaScript", "LocalStorage"],
-      github: "#",
+        "Este próprio site que você está visualizando! Um portfólio moderno e responsivo construído para apresentar meus projetos e habilidades como desenvolvedor.",
+      tech: ["Next.js", "React", "TypeScript", "Tailwind", "shadcn/ui", "Lucide React"],
+      github: "https://github.com/progamadorleo/site-apresentacao",
       demo: "#",
     },
   ]
