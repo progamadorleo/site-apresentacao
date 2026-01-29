@@ -53,20 +53,26 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-4">
-                  <Link
+                  <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-primary transition-colors"
                     aria-label={`Ver código do ${project.title} no GitHub`}
                   >
                     <Github className="w-5 h-5" />
-                  </Link>
-                  <Link
-                    href={project.demo}
-                    className="text-muted-foreground hover:text-primary transition-colors"
-                    aria-label={`Ver demo do ${project.title}`}
-                  >
-                    <ExternalLink className="w-5 h-5" />
-                  </Link>
+                  </a>
+                  {project.demo !== "#" && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-primary transition-colors"
+                      aria-label={`Ver demo do ${project.title}`}
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
