@@ -25,7 +25,7 @@ export function Contact() {
         <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-4 mb-6">Vamos Trabalhar Juntos?</h2>
         <p className="text-muted-foreground leading-relaxed mb-12">
           Estou sempre aberto a novas oportunidades e projetos interessantes. Se você tem uma ideia ou precisa de um
-          desenvolvedor frontend dedicado, entre em contato!
+          desenvolvedor, entre em contato!
         </p>
 
         <div className="grid sm:grid-cols-2 gap-4 max-w-md mx-auto">
