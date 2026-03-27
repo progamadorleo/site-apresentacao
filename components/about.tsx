@@ -11,17 +11,16 @@ export function About() {
         <div className="grid md:grid-cols-3 gap-12">
           <div className="md:col-span-2 space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              Tenho contato com computadores desde os <span className="text-primary">9 anos de idade</span>, o que
-              despertou em mim uma curiosidade natural pela tecnologia. Aos{" "}
-              <span className="text-primary">16 anos</span>, me apaixonei pelo mundo da programação e comecei a
-              desenvolver projetos simples, como{" "}
-              <span className="text-primary">plugins para servidores de Minecraft</span>.
+              Tenho contato com tecnologia desde os <span className="text-primary">9 anos de idade</span>, o que
+              despertou em mim uma curiosidade natural pelo desenvolvimento de software. Aos{" "}
+              <span className="text-primary">16 anos</span>, iniciei minha jornada na programação e desde então venho
+              me dedicando a criar soluções que agregam valor real aos negócios.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              A partir daí, minha jornada evoluiu para projetos mais complexos: construção de{" "}
-              <span className="text-primary">ERPs para micro empresas</span>,{" "}
+              Ao longo dos anos, minha trajetória evoluiu para projetos cada vez mais robustos: desenvolvimento de{" "}
+              <span className="text-primary">sistemas ERP para empresas</span>,{" "}
               <span className="text-primary">aplicativos mobile</span> e diversas soluções web completas. Toda essa
-              experiência foi adquirida de forma autodidata e através de freelances.
+              experiência foi construída de forma autodidata e através de projetos reais como freelancer.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               Hoje, como desenvolvedor fullstack, domino tanto o frontend com{" "}

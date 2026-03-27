@@ -19,7 +19,7 @@ export function Skills() {
     <section id="skills" className="px-6 md:px-12 lg:px-24 py-24">
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
-          <span className="text-primary font-mono">03.</span>
+          <span className="text-primary font-mono">04.</span>
           <h2 className="text-2xl md:text-3xl font-bold text-foreground">Habilidades</h2>
           <div className="h-px bg-border flex-1 max-w-xs" />
         </div>

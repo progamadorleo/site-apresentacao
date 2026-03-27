@@ -1,28 +1,14 @@
-import { Globe, Briefcase, Smartphone, ExternalLink, Gamepad2 } from "lucide-react"
+import { Globe, Briefcase, Smartphone, ExternalLink, Code } from "lucide-react"
 import Image from "next/image"
 
 export function Trajectory() {
   const timeline = [
     {
-      period: "2017 - 2019",
-      title: "Início com Minecraft",
-      description:
-        "Meus primeiros passos profissionais foram desenvolvendo plugins para servidores de Minecraft utilizando Java. Durante 3 anos, trabalhei em diversos servidores e projetos menores, mas meu principal trabalho foi como desenvolvedor da Rede Mania, uma rede completa de servidores com mais de 3.000 jogadores mensais. Também desenvolvi sistemas personalizados para outros servidores da comunidade brasileira, criando plugins de minigames, economia, ranks e integrações com Discord.",
-      icon: Gamepad2,
-      technologies: ["Java", "Spigot API", "Maven", "MySQL"],
-      featured: {
-        type: "server",
-        name: "Rede Mania",
-        players: "3.000+",
-        description: "Desenvolvedor principal da rede",
-      },
-    },
-    {
       period: "2019 - 2021",
-      title: "Transição para Web",
+      title: "Início no Desenvolvimento Web",
       description:
-        "No final de 2019, iniciei minha trajetória no desenvolvimento web. Comecei com HTML, CSS e JavaScript vanilla, e rapidamente evolui para frameworks modernos como React e TypeScript.",
-      icon: Globe,
+        "Iniciei minha trajetória no desenvolvimento web, começando com HTML, CSS e JavaScript vanilla. Rapidamente evolui para frameworks modernos como React e TypeScript, construindo projetos pessoais e estudando boas práticas de desenvolvimento.",
+      icon: Code,
       technologies: ["HTML", "CSS", "JavaScript", "React", "TypeScript"],
     },
     {
@@ -47,19 +33,31 @@ export function Trajectory() {
           link: "https://igrejaministeriovida.com.br/",
           description: "Site completo com pagamentos",
         },
+        {
+          name: "Imersão Conexão Viver",
+          logo: "imersao.png",
+          link: "https://imersaoconexaocrescer.com.br/",
+          description: "Landing page de evento",
+        },
+        {
+          name: "No Prazo Web",
+          logo: "codifica.png",
+          link: "https://noprazo.codifica.pro",
+          description: "Painel administrativo",
+        },
       ],
     },
     {
-      period: "2025 - 2026",
-      title: "Foco em Mobile",
+      period: "2025 - Presente",
+      title: "Foco em Mobile & Buscando Oportunidades",
       description:
-        "Atualmente meu foco principal é o desenvolvimento mobile com React Native. Criei o aplicativo 'No Prazo', um app de lembretes de pagamentos com mais de 2.000 downloads na Play Store, sistema de assinaturas, API própria e painel administrativo completo.",
+        "Atualmente meu foco principal é o desenvolvimento mobile com React Native. Criei o aplicativo 'No Prazo', um app de lembretes de pagamentos com mais de 10.000 downloads na Play Store, sistema de assinaturas, API própria e painel administrativo completo. Pronto para contribuir com soluções de alto impacto em projetos desafiadores.",
       icon: Smartphone,
       technologies: ["React Native", "Expo", "Node.js", "API REST"],
       featured: {
         type: "app",
         name: "No Prazo",
-        downloads: "2.000+",
+        downloads: "+10k",
         hasLogo: true,
         link: "https://play.google.com/store/apps/details?id=com.noprazo",
       },
@@ -85,7 +83,7 @@ export function Trajectory() {
                 {/* Timeline dot */}
                 <div className="absolute left-4 md:left-6 w-4 h-4 bg-primary rounded-full border-4 border-background" />
 
-                {/* Icon - Support for custom image icon */}
+                {/* Icon */}
                 <div className="absolute left-0 md:left-1 -top-1 w-12 h-12 bg-card border border-border rounded-lg flex items-center justify-center overflow-hidden">
                   {item.icon && <item.icon className="w-5 h-5 text-primary" />}
                 </div>
@@ -104,33 +102,7 @@ export function Trajectory() {
                     ))}
                   </div>
 
-                  {/* Featured server (Rede Mania) */}
-                  {item.featured && item.featured.type === "server" && (
-                    <div className="mt-4 pt-4 border-t border-border">
-                      <div className="flex items-center gap-4">
-                        <div className="w-16 h-16 rounded-xl overflow-hidden bg-gradient-to-br from-green-600 to-green-800 flex-shrink-0 flex items-center justify-center">
-                          <Image
-                            src="minecraft-logo.png"
-                            alt="Minecraft"
-                            width={48}
-                            height={48}
-                            className="w-12 h-12 object-contain"
-                          />
-                        </div>
-                        <div>
-                          <h4 className="font-semibold text-foreground">{item.featured.name}</h4>
-                          <p className="text-sm text-muted-foreground">{item.featured.description}</p>
-                          <div className="flex items-center gap-2 mt-1">
-                            <span className="text-xs font-mono text-primary bg-primary/10 px-2 py-0.5 rounded">
-                              {item.featured.players} jogadores/mês
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-
-                  {/* Clients with logos - Added logo support and links */}
+                  {/* Clients with logos */}
                   {item.clients && (
                     <div className="mt-4 pt-4 border-t border-border">
                       <span className="text-sm text-muted-foreground">Alguns clientes:</span>
