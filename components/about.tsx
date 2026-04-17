@@ -47,7 +47,6 @@ export function About() {
               />
               <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300" />
             </div>
-
             <div className="absolute -inset-2 border-2 border-primary rounded-lg -z-10 translate-x-3 translate-y-3 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300" />
           </div>
         </div>
