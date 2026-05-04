@@ -1,40 +1,44 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter, JetBrains_Mono } from "next/font/google"
-import { Analytics } from "@vercel/analytics/next"
-import "./globals.css"
+import type { Metadata, Viewport } from 'next'
+import { Inter, JetBrains_Mono } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ["latin"] })
-const jetbrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  variable: '--font-jetbrains',
 })
 
 export const metadata: Metadata = {
-  title: "Leonardo da Silva Santos | Desenvolvedor Fullstack",
+  title: 'Leonardo Santos — Full Stack Developer',
   description:
-    "Desenvolvedor Fullstack especializado em React, TypeScript, JavaScript e Node.js. Criando aplicações web completas e modernas.",
-  icons: {
-    icon: [
-      {
-        url: "/coding.png",
-        media: "(prefers-color-scheme: light)",
-      },
-    ],
+    'Portfolio de Leonardo da Silva Santos, desenvolvedor Full Stack Web e Mobile especializado em Flutter, React Native, Node.js e TypeScript.',
+  keywords: ['desenvolvedor', 'full stack', 'flutter', 'react native', 'node.js', 'typescript', 'mobile', 'web'],
+  authors: [{ name: 'Leonardo da Silva Santos' }],
+  openGraph: {
+    title: 'Leonardo Santos — Full Stack Developer',
+    description: 'Portfolio de Leonardo Santos, desenvolvedor Full Stack Web e Mobile.',
+    type: 'website',
   },
+}
+
+export const viewport: Viewport = {
+  themeColor: '#0a4f5e',
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="pt-BR" className="scroll-smooth">
-      <body className={`${inter.className} ${jetbrainsMono.variable} font-sans antialiased`}>
-        {children}
-        <Analytics />
-      </body>
+    <html lang="pt-BR" className={`${inter.variable} ${jetbrains.variable} bg-background`}>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   )
 }
