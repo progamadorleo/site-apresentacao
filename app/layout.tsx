@@ -13,13 +13,13 @@ const jetbrains = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Leonardo Santos — Full Stack Developer',
+  title: 'Leonardo Santos :: Full Stack Developer',
   description:
     'Portfolio de Leonardo da Silva Santos, desenvolvedor Full Stack Web e Mobile especializado em Flutter, React Native, Node.js e TypeScript.',
   keywords: ['desenvolvedor', 'full stack', 'flutter', 'react native', 'node.js', 'typescript', 'mobile', 'web'],
   authors: [{ name: 'Leonardo da Silva Santos' }],
   openGraph: {
-    title: 'Leonardo Santos — Full Stack Developer',
+    title: 'Leonardo Santos :: Full Stack Developer',
     description: 'Portfolio de Leonardo Santos, desenvolvedor Full Stack Web e Mobile.',
     type: 'website',
   },

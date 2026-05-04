@@ -48,9 +48,6 @@ export function About() {
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-balance">
             Sobre mim<span className="text-primary">.</span>
           </h2>
-          <p className="mt-3 text-muted-foreground text-base max-w-md">
-            De suporte técnico a apps publicados nas lojas — essa é a versão curta.
-          </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-start">
